@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reinaldo Farías Serey · Diseño Instruccional | Sonofrecuencia</title>
+<meta name="description" content="Portafolio de diseño instruccional de Reinaldo Farías Serey (Sonofrecuencia): cursos e-learning en Moodle, rutas de aprendizaje, actividades interactivas, edición de video, avatares con IA y landings. Proyectos para CREE Capacitaciones, UMCE–SENADIS y Universidad SEK.">
+<meta property="og:title" content="Reinaldo Farías Serey · Diseño Instruccional">
+<meta property="og:description" content="Experiencias de aprendizaje virtual que se viven: Moodle, rutas de aprendizaje, actividades interactivas, video e IA.">
+<meta property="og:image" content="https://diseno-instruccional.sonofrecuencia.cl/media/aula_del_futuro.jpg">
+<meta property="og:url" content="https://diseno-instruccional.sonofrecuencia.cl/">
+<link rel="icon" href="media/logo_color.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --forest:#13301e; --green:#2b5a35; --gold:#a8844b; --gold-soft:#d9c39a; --cream:#f8f4ec; --sage:#dfe6d6;
+         --ink:#1c241e; --muted:#5b655d; --line:#ddd2bd; --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif }
+  *{ box-sizing:border-box; margin:0; padding:0 }
+  html{ scroll-behavior:smooth }
+  body{ font-family:var(--sans); color:var(--ink); background:var(--cream); font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased }
+  img,video{ display:block; max-width:100% }
+  a{ color:inherit }
+  .wrap{ width:min(1160px, 100% - 32px); margin-inline:auto }
+  section{ padding:88px 0 }
+  .eyebrow{ font-size:12px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); font-weight:700 }
+  h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var(--forest) }
+  h2{ font-size:clamp(34px,5vw,52px); margin:10px 0 18px } h2 em,h1 em{ font-style:italic; color:var(--green) }
+  h3{ font-size:25px; margin-bottom:6px }
+  .lead{ font-family:var(--serif); font-size:clamp(20px,2.4vw,24px); line-height:1.45; max-width:780px }
+  .muted{ color:var(--muted) }
+  .btn{ display:inline-flex; align-items:center; gap:10px; padding:14px 24px; border-radius:40px; font-weight:600; font-size:15px; text-decoration:none; transition:transform .15s }
+  .btn:hover{ transform:translateY(-1px) }
+  .btn-gold{ background:var(--gold-soft); color:var(--forest) } .btn-line{ border:1.5px solid rgba(255,255,255,.6); color:#fff } .btn-dark{ background:var(--forest); color:#fff }
+  .dark{ background:var(--forest); color:#e9efe5 } .dark h2,.dark h3{ color:#fff } .dark h2 em{ color:var(--gold-soft) } .dark .muted{ color:rgba(233,239,229,.75) } .dark .eyebrow{ color:var(--gold-soft) }
+  .grid{ display:grid; gap:18px } .g2{ grid-template-columns:repeat(2,1fr) } .g3{ grid-template-columns:repeat(3,1fr) } .g4{ grid-template-columns:repeat(4,1fr) }
+  .card{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px }
+
+  .nav{ position:absolute; top:0; left:0; right:0; z-index:5; padding:20px 0 }
+  .nav .wrap{ display:flex; justify-content:space-between; align-items:center; gap:16px }
+  .nav img{ width:200px } .nav nav{ display:flex; gap:22px; align-items:center }
+  .nav nav a{ color:#fff; text-decoration:none; font-size:14px; font-weight:500; opacity:.9 }
+  .nav .cta{ background:var(--gold-soft); color:var(--forest)!important; padding:9px 18px; border-radius:30px; font-weight:700; opacity:1 }
+
+  .hero{ background:radial-gradient(120% 90% at 85% 25%, #1f4a2c 0%, #13301e 55%, #0d2416 100%); color:#fff; padding:140px 0 80px }
+  .hero .cols{ display:grid; grid-template-columns:1.2fr .8fr; gap:56px; align-items:center }
+  .hero h1{ color:#fff; font-size:clamp(46px,6.4vw,84px); font-weight:500; margin:12px 0 14px } .hero h1 em{ color:var(--gold-soft); display:block }
+  .hero p.sub{ font-family:var(--serif); font-size:clamp(20px,2.4vw,26px); line-height:1.4; color:rgba(255,255,255,.9); max-width:620px }
+  .hero .ctas{ display:flex; flex-wrap:wrap; gap:12px; margin-top:28px }
+  .foto{ position:relative } .foto img{ border-radius:18px; width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 20%; box-shadow:0 30px 80px rgba(0,0,0,.45) }
+  .foto .badge{ position:absolute; left:-20px; bottom:26px; background:var(--gold-soft); color:var(--forest); border-radius:12px; padding:12px 18px; font-size:13px; font-weight:600; line-height:1.35; max-width:230px; box-shadow:0 12px 30px rgba(0,0,0,.3) }
+  .foto .badge b{ display:block; font-family:var(--serif); font-size:24px }
+  .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:52px; padding-top:24px; border-top:1px solid rgba(255,255,255,.22) }
+  .stats b{ display:block; font-family:var(--serif); font-size:40px; color:var(--gold-soft); line-height:1 } .stats span{ font-size:13.5px; color:rgba(255,255,255,.8) }
+
+  .empresa{ display:grid; grid-template-columns:1fr 1.3fr; gap:48px; align-items:center }
+  .chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:20px }
+  .chips span{ background:var(--sage); color:var(--forest); border-radius:30px; padding:7px 15px; font-size:14px; font-weight:600 }
+
+  .destacado{ position:relative; border-radius:16px; overflow:hidden; background:#000; box-shadow:0 24px 70px rgba(0,0,0,.4); aspect-ratio:16/9 }
+  .destacado video{ width:100%; height:100%; object-fit:cover }
+
+  .serv .card{ border-top:3px solid var(--green) } .serv .ic{ font-size:30px; margin-bottom:8px } .serv p{ font-size:14.5px; color:var(--muted) }
+
+  .proy{ display:grid; grid-template-columns:1fr 1.25fr; gap:40px; align-items:start; margin-top:44px }
+  .proy.inv{ grid-template-columns:1.25fr 1fr } .proy.inv .txt{ order:2 }
+  .proy .tag{ display:inline-block; font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--gold); margin-bottom:8px }
+  .proy ul{ list-style:none; margin:14px 0 0 } .proy li{ padding:7px 0 7px 26px; position:relative; border-bottom:1px solid var(--line); font-size:15px }
+  .proy li::before{ content:"✓"; position:absolute; left:4px; color:var(--gold); font-weight:700 }
+  .clips{ display:grid; grid-template-columns:1fr 1fr; gap:12px }
+  .clip{ position:relative; border-radius:12px; overflow:hidden; background:#0b1a10; aspect-ratio:16/10; border:1px solid var(--line) }
+  .clip video{ width:100%; height:100%; object-fit:cover; object-position:top }
+  .clip span{ position:absolute; left:8px; bottom:8px; background:rgba(19,48,30,.88); color:#fff; font-size:12px; font-weight:600; padding:5px 10px; border-radius:20px }
+  .vivo{ margin-top:18px } .vivo .t{ font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:8px }
+  .vivo a{ display:inline-block; margin:0 6px 8px 0; background:#fff; border:1px solid var(--line); border-radius:30px; padding:6px 13px; font-size:13px; font-weight:600; color:var(--forest); text-decoration:none }
+  .vivo a:hover{ background:var(--sage) }
+
+  .land .card{ padding:0; overflow:hidden } .land img{ width:100%; aspect-ratio:16/10; object-fit:cover; object-position:top }
+  .land .card div{ padding:16px 18px } .land a{ text-decoration:none }
+  .land p{ font-size:14px; color:var(--muted) }
+
+  .pasos{ display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-top:34px }
+  .pasos .n{ width:44px; height:44px; border-radius:50%; border:1.5px solid var(--gold-soft); color:var(--gold-soft); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:22px; margin-bottom:12px }
+  .pasos b{ display:block; font-family:var(--serif); font-size:23px; font-weight:500; color:#fff } .pasos p{ font-size:14px; color:rgba(233,239,229,.78) }
+
+  .tools{ display:flex; flex-wrap:wrap; gap:10px; margin-top:22px }
+  .tools span{ background:#fff; border:1px solid var(--line); border-radius:10px; padding:10px 16px; font-weight:600; font-size:14.5px; color:var(--forest) }
+
+  .forma{ display:grid; grid-template-columns:340px 1fr; gap:48px; align-items:start }
+  .forma img{ border-radius:14px; aspect-ratio:3/4; object-fit:cover; object-position:50% 15% }
+  .creds{ list-style:none; columns:2; column-gap:28px; margin-top:18px }
+  .creds li{ break-inside:avoid; padding:10px 0; border-bottom:1px solid var(--line); font-size:14.5px; line-height:1.4 } .creds li span{ display:block; color:var(--muted); font-size:13px }
+  .orgs{ display:flex; flex-wrap:wrap; gap:10px 28px; margin-top:26px } .orgs span{ font-family:var(--serif); font-size:22px; font-weight:600; color:var(--forest) }
+
+  .contact{ text-align:center } .contact .lead{ margin:0 auto } .contact .ctas{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:28px }
+  footer{ background:var(--forest); color:rgba(255,255,255,.6); padding:30px 0; font-size:13px }
+  footer .wrap{ display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap } footer img{ width:180px }
+
+  @media (max-width:980px){ .g4{ grid-template-columns:1fr 1fr } .pasos{ grid-template-columns:1fr 1fr } }
+  @media (max-width:900px){
+    section{ padding:64px 0 } .nav nav a:not(.cta){ display:none }
+    .hero .cols,.empresa,.proy,.proy.inv,.forma{ grid-template-columns:1fr; gap:28px } .proy.inv .txt{ order:0 }
+    .foto{ max-width:420px } .foto .badge{ left:12px } .g3{ grid-template-columns:1fr 1fr } .stats{ grid-template-columns:1fr 1fr }
+    .forma img{ max-width:320px }
+  }
+  @media (max-width:620px){ .g2,.g3,.g4,.clips{ grid-template-columns:1fr } .creds{ columns:1 } .btn{ width:100%; justify-content:center } .nav img{ width:150px } .pasos{ grid-template-columns:1fr } }
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a href="https://sonofrecuencia.cl"><img src="media/logo_blanco.png" alt="Sonofrecuencia"></a>
+  <nav><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#formacion">Trayectoria</a>
+    <a class="cta" href="https://wa.me/56979913929?text=Hola%20Reinaldo%2C%20vi%20tu%20portafolio%20de%20dise%C3%B1o%20instruccional." target="_blank" rel="noopener">Conversemos</a></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="cols">
+    <div>
+      <div class="eyebrow" style="color:var(--gold-soft)">Portafolio · Diseño instruccional y e-learning</div>
+      <h1>Reinaldo Farías Serey <em>Diseño Instruccional</em></h1>
+      <p class="sub">Diseño experiencias de aprendizaje virtual que se viven: rutas claras, recursos interactivos, video e inteligencia artificial al servicio de cada curso.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#proyectos">Ver proyectos</a>
+        <a class="btn btn-line" href="#video">▶ Tu aula del futuro</a>
+      </div>
+    </div>
+    <div class="foto"><img src="media/reinaldo.jpg" alt="Reinaldo Farías Serey"><div class="badge"><b>Desde 2016</b>en educación virtual</div></div>
+  </div>
+  <div class="stats">
+    <div><b>+10</b><span>años en educación virtual y capacitación</span></div>
+    <div><b>2015</b><span>docente universitario (USEK, USS, UMCE)</span></div>
+    <div><b>+20</b><span>actividades interactivas publicadas</span></div>
+    <div><b>Experto II</b><span>Sistema de Desarrollo Profesional Docente (CPEIP)</span></div>
+  </div>
+</div></section>
+
+<section id="sonofrecuencia"><div class="wrap">
+  <div class="empresa">
+    <div>
+      <div class="eyebrow">Quiénes somos</div>
+      <h2>Sonofrecuencia: <em>desarrollo humano y educación</em></h2>
+    </div>
+    <div>
+      <p class="lead">Somos una empresa que trabaja en el desarrollo humano y en la educación, usando tecnologías de punta. Unimos rigor pedagógico, creatividad e inteligencia artificial para crear cursos y experiencias formativas que motivan, se entienden y se completan.</p>
+      <div class="chips"><span>CREE Capacitaciones</span><span>UMCE–SENADIS</span><span>Universidad SEK</span><span>Academia Sonofrecuencia</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="dark" id="video" style="padding:72px 0"><div class="wrap">
+  <div class="eyebrow">Video de presentación</div>
+  <h2>Tu aula del futuro, <em>diseñada hoy</em></h2>
+  <p class="lead muted" style="margin-bottom:26px">Un recorrido por cursos reales: rutas en Moodle, textos de estudio diseñados, actividades interactivas y clases con avatares de IA.</p>
+  <div class="destacado"><video src="media/aula_del_futuro.mp4" poster="media/aula_del_futuro.jpg" controls preload="none" playsinline></video></div>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+  <div class="eyebrow">Qué hago</div>
+  <h2>Del insumo del experto <em>al curso funcionando</em></h2>
+  <p class="lead">Recibo los contenidos de la institución y los transformo en una experiencia completa, lista para el estudiante.</p>
+  <div class="grid g4 serv" style="margin-top:30px">
+    <div class="card"><div class="ic">🧭</div><h3>Rutas de aprendizaje</h3><p>Diseño instruccional, objetivos, secuencia de módulos, evaluación y retroalimentación.</p></div>
+    <div class="card"><div class="ic">🎓</div><h3>Moodle de punta a punta</h3><p>Montaje de cursos, configuración, H5P, cuestionarios, foros y soporte continuo a docentes y estudiantes.</p></div>
+    <div class="card"><div class="ic">🧩</div><h3>Actividades interactivas</h3><p>Líneas de tiempo, mapas conceptuales, arrastrar y soltar, casos y juegos, a la medida de cada necesidad.</p></div>
+    <div class="card"><div class="ic">🎬</div><h3>Edición de video</h3><p>Edición de clases grabadas, subtítulos, cortes de silencios y piezas breves para cada unidad.</p></div>
+    <div class="card"><div class="ic">🤖</div><h3>Avatares con IA</h3><p>Clases y presentaciones con avatares de inteligencia artificial y guiones pedagógicos.</p></div>
+    <div class="card"><div class="ic">📘</div><h3>Textos de estudio</h3><p>Diseño gráfico y editorial de textos y guías, accesibles y atractivos.</p></div>
+    <div class="card"><div class="ic">💡</div><h3>Curaduría de recursos</h3><p>Sugerencia de recursos, herramientas y metodologías activas para cada curso.</p></div>
+    <div class="card"><div class="ic">🌐</div><h3>Landings de programas</h3><p>Páginas de difusión e inscripción para cursos y programas formativos.</p></div>
+  </div>
+</div></section>
+
+<section id="proyectos" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow">Proyectos</div>
+  <h2>Trabajo <em>real, en uso</em></h2>
+
+  <div class="proy">
+    <div class="txt">
+      <span class="tag">UMCE · SENADIS · 2026</span>
+      <h3 style="font-size:32px">Curso de Educación Inclusiva</h3>
+      <p class="muted">Diseño instruccional del curso para docentes: ruta de aprendizaje por módulos, actividades interactivas de activación y aplicación, edición de videos de clases y soporte en Moodle.</p>
+      <ul>
+        <li>Ruta de aprendizaje y estructura por módulos</li>
+        <li>Actividades interactivas a la medida (HTML, H5P y Genially)</li>
+        <li>Edición de videos de clases y avatares con IA</li>
+        <li>Diseño de textos de estudio y soporte en Moodle</li>
+      </ul>
+      <div class="vivo">
+        <div class="t">Pruébalas en vivo</div>
+        <a href="https://sonofrecuencia-afk.github.io/Umce-Senadis-.-M-dulo-2.-Actividad-1-/" target="_blank" rel="noopener">¿Cómo entiendo la inclusión?</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-2-M-dulo-2/" target="_blank" rel="noopener">Repensar la inclusión desde el INDEX</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-3-M-dulo-2/" target="_blank" rel="noopener">Ámbito social</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-5-M-dulo-2/" target="_blank" rel="noopener">Análisis crítico</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-6-M-dulo-2/" target="_blank" rel="noopener">Neurodiversidad</a>
+        <a href="https://sonofrecuencia-afk.github.io/activaci-n-conocimientos-M3/" target="_blank" rel="noopener">Mapa de bienestar docente</a>
+        <a href="https://sonofrecuencia-afk.github.io/actividad-3-M3/" target="_blank" rel="noopener">Construyendo una comunidad</a>
+        <a href="https://sonofrecuencia-afk.github.io/activaci-n-conocimientos-M4/" target="_blank" rel="noopener">¿Desde dónde respondo?</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-1-M-dulo-4/" target="_blank" rel="noopener">Pausa, observa y elige</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-2-M-dulo-4/" target="_blank" rel="noopener">Explora tu ritmo</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-3-M-dulo-4/" target="_blank" rel="noopener">Muévete, adapta y elige</a>
+        <a href="https://sonofrecuencia-afk.github.io/Actividad-4-M-dulo-4.1/" target="_blank" rel="noopener">Del yo al encuentro</a>
+      </div>
+    </div>
+    <div class="clips">
+      <div class="clip"><video data-src="media/senadis_linea_politicas.mp4" poster="media/senadis_linea_politicas.jpg" muted loop playsinline></video><span>Línea de tiempo · políticas</span></div>
+      <div class="clip"><video data-src="media/senadis_linea_paradigmas.mp4" poster="media/senadis_linea_paradigmas.jpg" muted loop playsinline></video><span>Paradigmas de la inclusión</span></div>
+      <div class="clip"><video data-src="media/senadis_mapa.mp4" poster="media/senadis_mapa.jpg" muted loop playsinline></video><span>Mapa conceptual interactivo</span></div>
+      <div class="clip"><video data-src="media/senadis_dragdrop.mp4" poster="media/senadis_dragdrop.jpg" muted loop playsinline></video><span>Arrastrar y soltar</span></div>
+      <div class="clip"><video data-src="media/senadis_autoconocimiento.mp4" poster="media/senadis_autoconocimiento.jpg" muted loop playsinline></video><span>Autoconocimiento</span></div>
+      <div class="clip"><video data-src="media/senadis_curso.mp4" poster="media/senadis_curso.jpg" muted loop playsinline></video><span>Curso en Moodle</span></div>
+    </div>
+  </div>
+
+  <div class="proy inv">
+    <div class="txt">
+      <span class="tag">CREE Capacitaciones · 2022 – actualidad</span>
+      <h3 style="font-size:32px">Gestión Emocional y Bienestar Organizacional · Liderazgo</h3>
+      <p class="muted">Diseñador instruccional y coordinador de capacitaciones: cursos e-learning para empresas, con rutas en Moodle, textos de estudio diseñados, cuestionarios gamificados y clases en video.</p>
+      <ul>
+        <li>Cursos completos montados en Moodle</li>
+        <li>Textos de estudio con diseño editorial</li>
+        <li>Quizzes, foros y actividades gamificadas</li>
+        <li>Clases en video y avatares con IA</li>
+      </ul>
+    </div>
+    <div class="clips">
+      <div class="clip"><video data-src="media/cree_moodle.mp4" poster="media/cree_moodle.jpg" muted loop playsinline></video><span>Portada del curso</span></div>
+      <div class="clip"><video data-src="media/cree_unidad.mp4" poster="media/cree_unidad.jpg" muted loop playsinline></video><span>Unidad con video</span></div>
+      <div class="clip"><video data-src="media/cree_quiz.mp4" poster="media/cree_quiz.jpg" muted loop playsinline></video><span>Quiz gamificado</span></div>
+      <div class="clip"><video data-src="media/cree_texto.mp4" poster="media/cree_texto.jpg" muted loop playsinline></video><span>Texto de estudio</span></div>
+    </div>
+  </div>
+
+  <div class="proy">
+    <div class="txt">
+      <span class="tag">Universidad SEK</span>
+      <h3 style="font-size:32px">Conozcamos la IA</h3>
+      <p class="muted">Recurso interactivo para un curso sobre inteligencia artificial en la docencia: contenidos navegables, preguntas y botones de exploración.</p>
+      <span class="tag" style="margin-top:22px">Academia Sonofrecuencia · 2022 – actualidad</span>
+      <h3 style="font-size:32px">Aula virtual propia</h3>
+      <p class="muted">Cursos asincrónicos en Moodle con automatización de rutas, H5P, IA, quizzes, foros y recursos multimedia.</p>
+    </div>
+    <div class="clips" style="grid-template-columns:1fr">
+      <div class="clip"><video data-src="media/usek_ia.mp4" poster="media/usek_ia.jpg" muted loop playsinline></video><span>Conozcamos la IA · USEK</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="landings"><div class="wrap">
+  <div class="eyebrow">Landings de programas</div>
+  <h2>Difusión e inscripción <em>que convierte</em></h2>
+  <p class="lead">Páginas de un programa formativo, diseñadas, publicadas y conectadas a WhatsApp e inscripción.</p>
+  <div class="grid g4 land" style="margin-top:28px">
+    <a href="https://cuidarte.sonofrecuencia.cl" target="_blank" rel="noopener" class="card"><img src="media/landing_cuidarte.jpg" alt="CuidArte"><div><h3>CuidArte</h3><p>Capacitación para comunidades educativas.</p></div></a>
+    <a href="https://cuidarte-empresas.sonofrecuencia.cl" target="_blank" rel="noopener" class="card"><img src="media/landing_empresas.jpg" alt="CuidArte Empresas"><div><h3>CuidArte Empresas</h3><p>Bienestar y team building para organizaciones.</p></div></a>
+    <a href="https://cuidarte-pdc.sonofrecuencia.cl" target="_blank" rel="noopener" class="card"><img src="media/landing_pdc.jpg" alt="Taller Punto de Cultura"><div><h3>Taller comunitario</h3><p>Repositorio semanal de un taller de 6 sesiones.</p></div></a>
+    <a href="https://sesion-vibroacustica.sonofrecuencia.cl" target="_blank" rel="noopener" class="card"><img src="media/landing_vibro.jpg" alt="Sesión Vibroacústica"><div><h3>Sesión Vibroacústica</h3><p>Servicio con agenda por WhatsApp.</p></div></a>
+  </div>
+</div></section>
+
+<section class="dark" id="metodo"><div class="wrap">
+  <div class="eyebrow">Cómo trabajo</div>
+  <h2>Un proceso claro, <em>de principio a fin</em></h2>
+  <div class="pasos">
+    <div><div class="n">1</div><b>Diagnóstico</b><p>Necesidades, perfil del estudiante y objetivos de la institución.</p></div>
+    <div><div class="n">2</div><b>Ruta</b><p>Diseño instruccional, módulos, evaluación y cronograma.</p></div>
+    <div><div class="n">3</div><b>Producción</b><p>Textos, videos, avatares e interactivos a partir de los insumos del experto.</p></div>
+    <div><div class="n">4</div><b>Montaje</b><p>Curso en Moodle configurado, probado y listo para abrir.</p></div>
+    <div><div class="n">5</div><b>Acompañamiento</b><p>Soporte a docentes y estudiantes y mejoras continuas.</p></div>
+  </div>
+</div></section>
+
+<section id="herramientas"><div class="wrap">
+  <div class="eyebrow">Herramientas</div>
+  <h2>Tecnología <em>al servicio del aprendizaje</em></h2>
+  <div class="tools">
+    <span>Moodle</span><span>Google Classroom</span><span>H5P</span><span>Genially</span><span>HTML · CSS · JavaScript</span><span>GitHub Pages</span>
+    <span>WordPress</span><span>cPanel</span><span>Avatares con IA</span><span>IA generativa</span><span>Edición de video</span><span>Canva</span><span>Gamificación</span>
+  </div>
+</div></section>
+
+<section id="formacion" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <div class="forma">
+    <img src="media/reinaldo.jpg" alt="Reinaldo Farías Serey" loading="lazy">
+    <div>
+      <div class="eyebrow">Trayectoria</div>
+      <h2 style="margin-bottom:6px">Reinaldo Farías Serey</h2>
+      <p class="eyebrow" style="color:var(--green);letter-spacing:.14em">Diseñador instruccional · Docente universitario · Fundador de Sonofrecuencia</p>
+      <p class="lead" style="margin-top:16px">Diseñador instruccional y docente universitario con experiencia en educación virtual desde 2016. Especialista en cursos e-learning, Moodle, IA aplicada, gamificación y metodologías activas.</p>
+      <ul class="creds">
+        <li>Diseñador Instruccional<span>Proyecto curso Educación Inclusiva UMCE–SENADIS · 2026</span></li>
+        <li>Diseñador Instruccional y Coordinador de Capacitaciones<span>CREE Capacitaciones · 2022 – actualidad</span></li>
+        <li>Fundador y Director<span>Academia y aula virtual Sonofrecuencia · 2022 – actualidad</span></li>
+        <li>Docente universitario<span>Universidad SEK, USS y UMCE · 2015 – actualidad</span></li>
+        <li>Magíster en Docencia Universitaria<span>Universidad SEK</span></li>
+        <li>Diplomados en Metodologías y en Currículum y Evaluación<span>Universidad SEK</span></li>
+        <li>IA para Docentes · Docencia en Espacios Virtuales<span>Universidad SEK · 2023–2024</span></li>
+        <li>Tramo Experto II<span>Sistema de Desarrollo Profesional Docente, CPEIP</span></li>
+      </ul>
+      <div class="orgs"><span>CREE Capacitaciones</span><span>UMCE–SENADIS</span><span>Universidad SEK</span><span>USS</span><span>Academia Sonofrecuencia</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="contacto"><div class="wrap">
+  <div class="eyebrow">Contacto</div>
+  <h2>¿Diseñamos <em>tu próximo curso</em>?</h2>
+  <p class="lead">Conversemos sobre tu programa, tu plataforma y lo que necesitan tus estudiantes.</p>
+  <div class="ctas">
+    <a class="btn btn-dark" href="https://wa.me/56979913929?text=Hola%20Reinaldo%2C%20vi%20tu%20portafolio%20de%20dise%C3%B1o%20instruccional." target="_blank" rel="noopener">WhatsApp +56 9 7991 3929</a>
+    <a class="btn btn-dark" style="background:var(--gold-soft);color:var(--forest)" href="mailto:sonofrecuencia@gmail.com?subject=Portafolio%20de%20dise%C3%B1o%20instruccional">sonofrecuencia@gmail.com</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <img src="media/logo_blanco.png" alt="Sonofrecuencia">
+  <span>Sonofrecuencia · Desarrollo humano y educación con tecnologías de punta</span>
+</div></footer>
+
+<script>
+  // Los clips se cargan y reproducen solo cuando están en pantalla (página liviana).
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { var v = e.target;
+      if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(function(){}); } else { v.pause(); } });
+  }, { threshold: .35 });
+  document.querySelectorAll('video[data-src]').forEach(function (v) { io.observe(v); });
+</script>
+</body>
+</html>
